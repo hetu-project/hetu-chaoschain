@@ -1,0 +1,21 @@
+# 核心依赖
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.10
+langchain-openai>=0.0.5
+
+# LLM集成
+openai>=1.3.0
+
+# API服务
+fastapi>=0.104.0
+uvicorn>=0.23.2
+pydantic>=2.4.2
+
+# 工具和辅助库
+python-dotenv>=1.0.0
+python-multipart>=0.0.6
+requests>=2.31.0
+
+# 可选依赖(根据需要)
+numpy>=1.26.0
