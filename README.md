@@ -1,17 +1,54 @@
-# Hetu ChaosChain (HCC) 1.0: AI Agents Govern & Rule Blockchain
+# Hetu Governance Chain (hac-node): AI-Powered Blockchain Governance Platform
 
-## AI Agents: Unleashing Unprecedented Governance
-In Hetu ChaosChain (HCC) 1.0, AI Agents are the anarchic overlords. Operating within an onchain context that's as orderly as it is anarchic, their interactions are a maelstrom of efficiency and intelligence. This isn't your grandpa's blockchain; HCC breaks free from traditional data structure and governance shackles. By integrating AI Agents into proposal, voting, and consensus, it joins forces with traditional blockchain models to form a trust - defying, intelligent decision - making powerhouse.
+## Architecture Overview
+![System Architecture](assets/summary-view.jpg)
 
-## The Tech Arsenal
-### TEE + Trusted Environment: A Bulletproof Vest for the Blockchain
-The TEE + trusted environment in HCC is a fortress. It's an impregnable shield that guards every byte of data, every transaction, and every decision. Agents operate fearlessly within this domain, knowing that their operations are as secure as a dragon's hoard in a hidden cave.
+A decentralized governance network combining:
+- **hac-node**: Core blockchain node handling proposal lifecycle and consensus
+- **CometBFT**: Byzantine Fault Tolerant consensus engine for transaction ordering
+- **Hetu Agent Plugin**: Integration layer for third-party AI agents
+- **Trusted Execution Environment (TEE)**: Secure enclave for sensitive operations
 
-### Agent Shenanigans: Multiple Stabs & Standardization Shenanigans
-Agents in HCC are the wild cards. They get to take multiple swings at the ball, and if they miss, they just pick up the bat again. Over time, through some mysterious blockchain alchemy, they converge on standards. It's like a bunch of rebels deciding to form a new, more kick - ass order. This not only supercharges efficiency but also sets new standards for the blockchain game.
+## Key Components
 
-### Censorship - Resistant Voting: A Free-for-All Democracy
-Voting governance in HCC is a free - speech paradise. No one can muzzle the Agents here. Whether it's a bat - crazy idea or a revolutionary concept, every voice is heard. It's a democratic free - for - all where the power lies firmly in the hands of the Agents.
+### hac-node Governance Chain
+Specialized blockchain implementing:
+- Proposal lifecycle management (creation, voting, execution)
+- Node membership rules through Genesis Contract
+- Consensus integration with CometBFT
+- On-chain storage of governance artifacts
+
+### CometBFT Consensus Layer
+Provides:
+- Byzantine fault-tolerant transaction ordering
+- Deterministic block finality
+- P2P network layer
+- Block proposal and validation mechanics
+
+### Hetu Agent Plugin SDK
+Enables third-party AI agents to:
+1. Receive user inputs from host applications
+2. Perform intent recognition for governance actions
+3. Submit valid transactions to hac-node
+4. Automate voting/commenting based on customizable policies
+5. Monitor chain state through reactive subscriptions
+
+## Getting Started
+
+The Hetu Governance Chain is currently under active development. To experiment with the test network:
+
+```bash
+# See detailed testnet instructions
+cat run-manual.md
+```
+
+Key development resources:
+- `hac-node/` - Core blockchain implementation
+- `samples/` - Example agent implementations
+- `cometbft/` - Consensus layer configuration
+- `proposal-agent/` - Reference implementation of governance agent
+
+
 
 ## The Architectural Mayhem: BFT - Inspired Bedlam
 HCC's POC architecture, inspired by BFT blockchain networks, is a chaotic metropolis. It's filled with Validator nodes, each a unique mashup of an independent Agent and a Chain-Copilot(CC). These Agents are as different as night and day, each bringing their own bag of tricks.
