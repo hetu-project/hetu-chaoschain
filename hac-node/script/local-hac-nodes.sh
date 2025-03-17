@@ -45,7 +45,7 @@ done
 
 declare -a NODE_IDS
 for i in $(seq 1 $((NUM_NODES))); do
-    NODE_IDS[$i]=$(cometbft show-node-id --home data$i)
+    NODE_IDS[$i]=$( ./hac show-node-id -k  data$i/config/node_key.json)
     echo ${NODE_IDS[$i]}
 done
 

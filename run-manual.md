@@ -19,6 +19,7 @@ Note: The system currently starts 3 nodes by default. If you need to change this
 
 After all nodes are successfully running, you will see the node output information in the hac-node/build/out3.
 
+
 ### Running the Agent Client
 
 #### In a new terminal, build and run the sample applications:
@@ -31,6 +32,8 @@ cd ./build
 This will start the agent client. You can monitor the output to see the system's operation.
 
 
+![Client Register](assets/hac-node-register.jpg)
+
 #### In a new terminal, Creating a New Proposal in samples/build
 
 To create a new proposal using the sample client:
@@ -40,4 +43,8 @@ cd samples/build  // Go to the build directory
 ```
 This command sends a new proposal to the chain with the specified title and data. 
 
+![Add New Proposal](assets/add-proposal-draft.jpg)
+
 you can monitor the output in the previous terminal to see the system's operation.
+
+![Terminal View](assets/samples-terminal-view.jpg)
